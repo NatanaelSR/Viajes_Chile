@@ -17,3 +17,18 @@ body {
     object-fit: cover;
 }
 
+ .tooltip-inner {
+   background-color: #383838;
+    color: #ffffff;
+    font-size: 20px;
+    white-space: nowrap;
+    max-width: none;
+}
+
+.tooltip .tooltip-arrow {
+    background-color: #383838;
+}
+
+.mod-color.active {
+    color: #0dcaf0
+}
