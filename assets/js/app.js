@@ -2,7 +2,6 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-
 // Se espera a que carge el documento
 document.addEventListener('DOMContentLoaded', () =>{
     const formulario = document.getElementById('formularioContacto');
@@ -30,9 +29,10 @@ $(() => {
     console.log('Entorno de jQuery inicializado.');
 
 //Se cambia de color con doble click texto de Quienes Somos     
- $('.mod-color').on('dblclick',  ()=> {
-        $(this).toggleClass('active');
+$('.mod-color').on('dblclick', (event) => {
+    $(event.currentTarget).toggleClass('active');
 });
+
 //Se esconde y aparece seccion de Destacados
  $('#toggle-destacados').on('click', () => {
         $('#toggle-cards').slideToggle(800);
