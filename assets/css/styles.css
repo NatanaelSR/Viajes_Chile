@@ -6,17 +6,42 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Se ajusta tamaño de logo para que no agrande el nav*/
 .img-logo {
     height: 30px;
     width: auto;
 }
 
+/* Se limita tamaño de carousel para que no cresca mucho en pantallas grandes*/
+.carousel-max-1440px{
+    max-width: 1440px;
+    margin: 0 auto;
+   
+}
+
+.carousel-border-r{
+    border-radius: 30px;          
+    overflow: hidden;
+}
+
+@media (max-width: 1440px) {
+    .carousel-border-r {
+        border-radius: 0 !important;
+    }
+}
+
+.card-width{
+    width: 18rem;
+}
+
+/* Se limita tamaño de las imagenes de las cards para que sean uniformes */
 .card-img-size{
     width: 100%;
     height: 150px;     
     object-fit: cover;
 }
 
+/*Se cambia color del tooltip*/
  .tooltip-inner {
    background-color: #383838;
     color: #ffffff;
@@ -29,6 +54,7 @@ body {
     background-color: #383838;
 }
 
+/*Color al que cambia la seccion de Destacados*/
 .mod-color.active {
     color: #0dcaf0
 }
