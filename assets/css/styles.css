@@ -12,6 +12,24 @@ body {
     width: auto;
 }
 
+.navbar-fixed-sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+@media (min-width:1440px){
+    .navbar-fixed-sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+}
+
+
 /* Se limita tamaño de carousel para que no cresca mucho en pantallas grandes*/
 .carousel-max-1440px{
     max-width: 1440px;
