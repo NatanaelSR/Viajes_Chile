@@ -26,7 +26,7 @@ body {
 
 @media (max-width: 1440px) {
     .carousel-border-r {
-        border-radius: 0 !important;
+        border-radius: 0
     }
 }
 
