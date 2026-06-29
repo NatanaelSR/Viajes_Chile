@@ -21,7 +21,7 @@ body {
     z-index: 1030;
 }
 
-@media (min-width:1440px){
+@media (min-width:1441px){
     .navbar-fixed-sticky{
         position: -webkit-sticky;
         position: sticky;
